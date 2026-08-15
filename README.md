@@ -12,7 +12,7 @@ nodejs
 4. sends your new password
 5. now, password = new password
 
-if you get error 4211 try to update the build number field, which i commented next to, look this function in the [games](https://territorial.io/) code (this is from v2.16.33):
+if you get error 4211 try to update the build number field, which i commented next to, look for this function in the [games](https://territorial.io/) code (this is from v2.16.33):
 ```
     function dL() {
       this.du = 1758;   // this is the build number
