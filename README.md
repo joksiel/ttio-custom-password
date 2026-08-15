@@ -6,7 +6,7 @@ everything in this script **can be recreated in territorial.io or a mod of terri
 # required
 nodejs
 # how it works
-1. sends a packet to validate websocket connection
+1. sends an init packet to validate websocket connection
 2. receives and solves PoW challenge
 3. sends account info to login
 4. sends your new password
