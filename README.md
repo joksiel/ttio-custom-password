@@ -11,3 +11,34 @@ nodejs
 3. sends account info to login
 4. sends your new password
 5. now, password = new password
+
+if you get error 4211 try to update the build number field, which i commented next to, look for a function in the games code (where "this.du" is build number):
+```
+    function dL() {
+      this.du = 1758;
+      var dv = 2;
+      var dw = 16;
+      var dx = 33;
+      this.rVersion = 25;
+      this.dy = 0;
+      this.di = function () {
+        this.dz = 2;
+        var e0 = '';
+        this.o = dv + '.' + dw + '.' + dx;
+        this.e1 = '12 Aug 2026 [' + this.o + e0 + ']';
+        var e2 = window.location.hostname.toLowerCase();
+        this.aA = e2.indexOf(S[23]) >= 0;
+        this.e3 = e2.indexOf('github.io') >= 0;
+        this.e4 = e2.indexOf(S[54]) >= 0;
+        this.aB = e5();
+        this.e6 = (new Date()).getTime() % 1048576;
+      };
+      this.n = 0;
+      function e5() {
+        try {
+          return window.self !== window.top;
+        } catch (e) {
+          return true;
+        }
+      }
+    }```
